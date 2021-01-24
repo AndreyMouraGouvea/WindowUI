@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Window for Code like Mac</title>
+</head>
+<style type="text/css">
+html,
+body {
+  background: #242424;
+  margin: 0;
+}
+h1,
+p {
+  margin: 10px 0px;
+}
+.window-ui {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 16px;
+  width: auto;
+  background-color: #fff;
+  padding: 8px 12px;
+  word-wrap: break-word;
+  position: relative;
+  border-radius: 5px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.4);
+  margin: 20px;
+  border-top: 32px solid #494949;
+}
+.window-ui::before {
+  display: block;
+  position: absolute;
+  content: "";
+  top: -20px;
+  left: 20px;
+  width: 8px;
+  height: 8px;
+  border-radius: 100%;
+  background-color: #ff544d;
+  box-shadow: 0 0 0 2px #ff544d, 24px 0 0 2px #ffb62a, 48px 0 0 2px #24c339;
+}
+.window-ui::after {
+  position: absolute;
+  content: attr(title);
+  width: max-content;
+  height: 32px;
+  line-height: 32px;
+  top: -32px;
+  left: 100px;
+  color: #fff;
+}
+
+
+</style>
+<body>
+
+<div class="window-ui" title="Lorem Ipsum">
+  <h1>What is Lorem Ipsum?</h1>
+  <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
+</div>
+
+</body>
+</html>
